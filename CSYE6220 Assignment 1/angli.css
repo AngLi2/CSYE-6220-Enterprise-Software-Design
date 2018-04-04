@@ -1,0 +1,119 @@
+body {
+  background-color: rgba(228, 180, 192, 0.45);
+  background: linear-gradient(rgb(59, 69, 209), rgb(164, 224, 181), rgb(59, 69, 209));
+  font-family: Verdana, Arial, sans-serif;
+}
+
+nav{
+  background-color: rgb(156, 128, 207);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h1{
+    padding-top:1em;
+}
+
+#container {
+  background-image: url('imgs/bgimage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: auto;
+  width: 80%;
+  min-width: 960px;
+  max-width: 2048px;
+  box-shadow: 3px 3px 3px rgb(101, 11, 11);
+}
+
+main {
+  text-align: center;
+}
+
+footer {
+  margin: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+footer a {
+  color: rgb(221, 113, 235);
+}
+
+a {
+  text-decoration: none;
+}
+
+a::link {
+  color: rgb(68, 32, 47);
+}
+#resume{
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  padding: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align:left;
+
+}
+#resume h3{
+  margin-top: 1em;
+  margin-bottom: 0px;
+}
+#resume h2{
+  text-align: center;
+}
+#resume span{
+  font-weight: bold;
+}
+#resume p{
+  margin-top: 1em;
+  margin-bottom: 0px;
+}
+#resume .time{
+  font-weight: normal;
+  float:right;
+  position:relative;
+}
+#photos{
+  margin: 2em;
+  font-family: Arial,Verdana,Sans-serif;
+}
+.text-left{
+  text-align: left;
+}
+figure {
+  display: inline-block;
+  padding-bottom: 0.3em;
+  background-color: rgb(118, 99, 186);
+  box-shadow: 3px 3px 3px rgb(41, 4, 39);
+}
+table{
+  margin-left: 10%;
+  width: 80%;
+}
+table, td, th{
+  border: 0.1px solid black;
+  padding: 1px;
+  font-family: Arial,sans-serif;
+}
+td{
+  width:40%;
+  height: 40px;
+}
+tr:nth-of-type(3n){
+  background-color: rgb(176, 210, 184);
+}
+tr:nth-of-type(3n+1){
+  background-color: rgb(170, 178, 222);
+}
+tr:nth-of-type(3n+2){
+  background-color: rgb(196, 170, 219);
+}
+#friend{
+  margin: 2em;
+}
+.red{
+    color: red;
+}
