@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Social</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="angli.css">
+</head>
+
+<body>
+  <main id="container">
+
+    <div>
+      <h1>Be My Friend!</h1>
+    </div>
+
+    <div>
+      <h4><nav><b><a href="index.html">Home</a> &nbsp; <a href="Resume.html">Resume</a>  &nbsp; <a href="Photos.html">Photos</a> &nbsp; <a href="Social.html">Social</a> &nbsp;</b>
+      </nav></h4>
+    </div>
+    <div id="friend">
+      <h3 class="text-left">
+        If you want to be my friend, You can fill in the following form to tell something about yourself to me and submit it!
+      </h3>
+      <h3 class="text-left">
+        Informations labeled with "<span class="red">*</span>" is required!
+      </h3>
+      <h3 class="text-left">
+        And there will be some validations for your inputs!
+      </h3>
+    </div>
+
+    <div>
+      <form>
+        <table>
+          <tr>
+            <td><label for="name" required>Name<span class="red">*</span>：</label></td>
+            <td><input type="text" name="name" id="name" required onblur="validateName()">
+              <p class="red" id="nameError">
+                Invalid input for name. Only text values permitted.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+              <input type="radio" name="gender" value="male">male
+              <input type="radio" name="gender" value="famale">female
+              <input type="radio" name="gender" value="others">others
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tel">Tel Number<span class="red">*</span>:</label></td>
+            <td><input type="tel" name="tel" id="tel" required onblur="validateTel()">
+              <p class="red" id="telError">
+                Invalid input for phone number. Only numerical values permitted and in the requested format xxx-xxx-xxxx.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail<span class="red">*</span>:</label></td>
+            <td><input type="email" name="email" id="email" required onblur="validateMail()">
+              <p class="red" id="emailError">
+                Invalid input for your email id. Please enter email id in proper format.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="singer">What singer do you prefer?</label></td>
+            <td><input type="text" name="singer"></td>
+          </tr>
+          <tr>
+            <td><label for="movie">What movie do you prefer?</label></td>
+            <td><input type="text" name="movie"></td>
+          </tr>
+          <tr>
+            <td><label for="happiness">Do you think you are happy know? Give me the point!</label></td>
+            <td>&nbsp;0<input type="range" name="happiness">100</td>
+          </tr>
+          </tr>
+          <tr>
+            <td><label for="color">What color do you prefer?</label></td>
+            <td><input type="color" name="color"></td>
+          </tr>
+          <tr>
+            <td><label for="number">How many times do you go to gym a week?</label></td>
+            <td><input type="number" name="number" min="0" max="10"></td>
+          </tr>
+          <tr>
+            <td><label for="date">Tell me your birthday if you want:</label></td>
+            <td><input type="date" name="date"></td>
+          </tr>
+          <tr>
+            <td><label for="comment" required>Say something to me:<span class="red">*</span></label></td>
+            <td><textarea name="comment" cols="30" rows="3" id="comment" onblur="validateComment()"></textarea></td>
+          </tr>
+        </table><br />
+        <input type="submit" value="Submit Questionaire">
+      </form>
+    </div>
+    <footer>
+      <hr />
+      <i><small>Copyright &copy; 2017 Ang Li<br>If you want to contact me, mail:
+      <a href="mailto:li.ang2@husky.neu.edu">li.ang2@husky.neu.edu</a>
+      </small></i>
+    </footer>
+  </main>
+
+
+</body>
+<script src="angli.js"></script>
+
+</html>
